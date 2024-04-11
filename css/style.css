@@ -231,3 +231,141 @@ footer .container {
         margin-right: 9px; 
     }
 }
+
+
+
+@media screen and (max-width: 576px) {
+    footer .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-block {
+        margin-bottom: 30px; 
+    }
+
+    .logo {
+        width: 200px; 
+    }
+
+    .header-text {
+        margin-top: 8%; 
+        font-size: 18px; 
+    }
+
+    .duvidas-button {
+        margin-top: 15px; 
+        font-size: 12px; 
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul {
+        margin-top: 15px; 
+    }
+
+    nav ul li {
+        margin-right: 0; 
+        margin-bottom: 8px; 
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    footer .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-block {
+        margin-bottom: 20px; 
+    }
+
+    .logo {
+        width: 180px; 
+    }
+
+    .header-text {
+        margin-top: 6%; 
+        font-size: 16px; 
+    }
+
+    .duvidas-button {
+        margin-top: 10px; 
+        font-size: 10px;
+    }
+
+    footer {
+        margin-top: 80px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul {
+        margin-top: 10px; 
+    }
+
+    nav ul li {
+        margin-right: 0; 
+        margin-bottom: 6px; 
+    }
+}
+
+
+
+/* Estilos para telas ainda menores */
+@media screen and (max-width: 360px) {
+    footer .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-block {
+        margin-bottom: 15px; 
+    }
+
+    .logo {
+        width: 160px; 
+    }
+
+    .header-text {
+        margin-top: 4%; 
+        font-size: 14px; 
+    }
+
+    .duvidas-button {
+        margin-top: 5px; 
+        font-size: 8px; 
+    }
+
+    footer {
+        margin-top: 60px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul {
+        margin-top: 5px; 
+    }
+
+    nav ul li {
+        margin-right: 0; 
+        margin-bottom: 4px; 
+    }
+}
