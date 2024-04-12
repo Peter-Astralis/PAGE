@@ -1,0 +1,1513 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #3d3b3a; 
+    padding-bottom: 0px; 
+    position: relative; 
+}
+#header {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding: 10px 10%;
+    margin-left: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 54px;
+    background-color: transparent; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #3d3b3a; 
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #3d3b3a; 
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 1s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.black-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.black-box {
+    width: calc(30% - 20px); 
+    height: 200px; 
+    background-color: rgba(0, 0, 0, 0.884); 
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.black-box img {
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 0px; 
+}
+
+.black-box p {
+    color: white; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 20px;
+}
+#header {
+    position: relative; 
+}
+
+footer {
+    position: relative; 
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    background-color: #111111f3;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 197px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.footer-block {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-block a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-block h2 {
+    margin-bottom: 10px;
+    font-family: "Libre Baskerville", serif;
+}
+
+.footer-block p {
+    margin-left: -21px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-block img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.social-icon {
+    margin-top: 6px;
+    margin-left: 10px;
+    transition: transform 0.4s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copyright {
+    position: relative;
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 00px;
+    padding-right: 20px;
+    bottom: -38px; 
+}
+.me {
+    position: relative;
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 2px;
+    padding-right: 20px;
+    bottom: -38px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .black-box {
+        width: 100%; 
+        max-width: 300px; 
+    }
+    
+
+    .footer-block {
+        flex: 1 1 100%; 
+        margin-bottom: 20px; 
+    }
+
+    footer .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-bottom: 0px; 
+    }
+
+    nav ul li {
+        margin-right: 9px; 
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .black-boxes {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin-top: 8%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 90%; 
+    }
+
+    .black-box {
+        width: calc(100% - 20px); 
+        height: 200px; 
+        background-color: rgba(0, 0, 0, 0.884); 
+        margin-bottom: 20px; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        margin-right: 0; 
+        margin-left: 0; 
+    }
+}
+
+
+
+@media screen and (max-width: 344px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 6px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -8px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -5px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 3px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 410px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -7px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 344px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 6px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -8px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -5px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 3px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 444px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -7px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 344px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 6px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -8px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -5px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 3px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 446px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -7px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 344px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 6px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -8px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -5px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 3px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 366px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 344px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 6px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -8px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -5px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 3px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 356px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -18px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 344px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 6px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -8px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -5px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -4px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 3px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 0px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -9px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
+
+
+@media screen and (max-width: 396px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: -18px; 
+    }
+    .header-text h1{
+        margin-top: 10%; 
+        font-size: 50px; 
+        text-align: center; 
+    }
+
+}
